@@ -4,7 +4,7 @@
 This project sheds light on Twitter sentiment on the 2020 US presidential election candidates/political parties. 
 Understanding and predicting what the american population is thinking can play a major role in making critical business decisions.
 
-<br>
+<br></br>
 
 
 
