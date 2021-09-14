@@ -19,15 +19,15 @@ Using the correct Corpus is critical for this project, hence a custom corpus was
 The following code block was used as one of the step for preprocessing data
 
 '''
-# A fucntion to replcae all the html tags and special characters with ''
+#### A fucntion to replace all the HTML tags and special characters with ''
 
 
-# Remove HTML ASCII
+#### Remove HTML ASCII
 def clean_ascii(text):
     text = html.unescape(text)
     return text
 
-# Function to clean dataframes of HTML Tags
+#### Function to clean dataframes of HTML Tags
 def clean_dataframe(df,col):
     # Extracting the twitter handle
     df['twitter'] = df[col].map(lambda x: re.findall('@(?=\w+)\w+',x))
@@ -59,7 +59,7 @@ def clean_dataframe(df,col):
 
 
 
-# Removing the stop words
+#### Removing the stop words
 def clean_stopWords(df,col):
     
     df['clean'] = df[col].apply(lambda x: " ".join([word for word in x.split() if word not in stop_words]))
@@ -68,14 +68,14 @@ def clean_stopWords(df,col):
     
     
     
-# A function to change the strings to lower case
+#### A function to change the strings to lower case
 def clean_lower_text(text):
     text.lower()
     
     return text
 
 
-# a text joining function for joining tokenized text
+#### a text joining function for joining tokenized text
 def join(text):
     text = " ".join(text)
     return text
@@ -84,6 +84,6 @@ def join(text):
 
 ### Visualization
 
-After processing and EDA step I visualized data such as 
+After processing and EDA step I visualized data following are some of the images. 
 
 
