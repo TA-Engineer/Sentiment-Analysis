@@ -94,9 +94,9 @@ After processing and EDA step I visualized data following are some of the images
 
 ![](Images\Word_Frequency.png)
  <br></br>
-![](Negative_Sentiment_Pie_Chart.png)
+![](Images\Negative_Sentiment_Pie_Chart.png)
  <br></br>
-![](Sentiment_Count.png)
+![](Images\Sentiment_Count.png)
 
 
 
