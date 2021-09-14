@@ -6,6 +6,17 @@ Understanding and predicting what the american population is thinking can play a
 
 <br></br>
 
+LIBRARIES USED:
+1. NLTK
+2. Scikit-Learn
+3. MatplotLib
+4. Pandas
+5. Numpy
+6. Seaborn
+7. WordCloud
+8. Regex
+9. itertools
+10. graphviz
 
 
 ### Data Collection
@@ -108,6 +119,28 @@ Uncertain tweets are where the tweet didnot mention about the parties.
     
 ![](Images/Sentiment_Count.png)
 </center>
+
+
+
+# MACHINE LEARNING MODEL
+
+There were seven models used to predict the sentimanet of the tweets. 
+1. Logistic Regression
+2. KNN
+3. Naive Bayes
+4. Support Vector Machine
+5. XGBoost
+6. Ensemble (Randome Forest)
+7. Decision Tree
+
+Note to vectorize the data for model implementation Bag of Words and TF-IDF were used.
+
+
+
+
+
+
+
 
 
 
