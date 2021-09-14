@@ -88,6 +88,17 @@ def join(text):
 
 ### Visualization
 
-After processing and EDA step I visualized data following are some of the images. 
+After processing and EDA step I visualized data following are some of the images.
+ <br></br>
+
+
+![](Images\Word_Frequency.png)
+ <br></br>
+![](Negative_Sentiment_Pie_Chart.png)
+ <br></br>
+![](Sentiment_Count.png)
+
+
+
 
 
