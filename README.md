@@ -23,13 +23,17 @@ The following code block was used as one of the step for preprocessing data
 
 
 #### Remove HTML ASCII
+
 def clean_ascii(text):
     text = html.unescape(text)
     return text
 
 #### Function to clean dataframes of HTML Tags
+
 def clean_dataframe(df,col):
+
     # Extracting the twitter handle
+    
     df['twitter'] = df[col].map(lambda x: re.findall('@(?=\w+)\w+',x))
     
     # Extracting Hastags
