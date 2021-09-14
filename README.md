@@ -93,10 +93,21 @@ def join(text):
 After processing and EDA step I visualized data following are some of the images.
  <br></br>
 
-
-![](Images\Word_Frequency.png)
-![](Images\Negative_Sentiment_Pie_Chart.png)
-![Sentinment Count Image](Images\Sentiment_Count.png)
+<center>
+    The first image of word frequency in the Tweets
+    
+![](Images/Word_Frequency.png)
+    
+This image shows negative sentiment images and what are the main topics they are focused on
+    
+![](Images/Negative_Sentiment_Pie_Chart.png)
+    
+This bar graph showcase tweet count based on sentiment for different politcal parties (republican and democrat) where 0 being negative and 1 being positive tweet. 
+    
+Uncertain tweets are where the tweet didnot mention about the parties.
+    
+![](Images/Sentiment_Count.png)
+</center>
 
 
 
