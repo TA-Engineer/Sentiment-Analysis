@@ -4,8 +4,19 @@
 This project sheds light on Twitter sentiment on the 2020 US presidential election candidates/political parties. 
 Understanding and predicting what the american population is thinking can play a major role in making critical business decisions.
 
-<br>
+<br></br>
 
+LIBRARIES USED:
+1. NLTK
+2. Scikit-Learn
+3. MatplotLib
+4. Pandas
+5. Numpy
+6. Seaborn
+7. WordCloud
+8. Regex
+9. itertools
+10. graphviz
 
 
 ### Data Collection
@@ -18,17 +29,17 @@ Using the correct Corpus is critical for this project, hence a custom corpus was
 
 The following code block was used as one of the step for preprocessing data
 
-'''
-#### A fucntion to replace all the HTML tags and special characters with ''
+
+### A fucntion to replace all the HTML tags and special characters with ''
 
 
-#### Remove HTML ASCII
+### Remove HTML ASCII
 
 def clean_ascii(text):
     text = html.unescape(text)
     return text
 
-#### Function to clean dataframes of HTML Tags
+### Function to clean dataframes of HTML Tags
 
 def clean_dataframe(df,col):
 
@@ -63,7 +74,7 @@ def clean_dataframe(df,col):
 
 
 
-#### Removing the stop words
+### Removing the stop words
 def clean_stopWords(df,col):
     
     df['clean'] = df[col].apply(lambda x: " ".join([word for word in x.split() if word not in stop_words]))
@@ -72,18 +83,20 @@ def clean_stopWords(df,col):
     
     
     
-#### A function to change the strings to lower case
+### A function to change the strings to lower case
 def clean_lower_text(text):
     text.lower()
     
     return text
 
 
-#### a text joining function for joining tokenized text
+### a text joining function for joining tokenized text
+
 def join(text):
+
     text = " ".join(text)
     return text
-'''
+
 
 
 ### Visualization
@@ -91,12 +104,43 @@ def join(text):
 After processing and EDA step I visualized data following are some of the images.
  <br></br>
 
+<center>
+    The first image of word frequency in the Tweets
+    
+![](Images/Word_Frequency.png)
+    
+This image shows negative sentiment images and what are the main topics they are focused on
+    
+![](Images/Negative_Sentiment_Pie_Chart.png)
+    
+This bar graph showcase tweet count based on sentiment for different politcal parties (republican and democrat) where 0 being negative and 1 being positive tweet. 
+    
+Uncertain tweets are where the tweet didnot mention about the parties.
+    
+![](Images/Sentiment_Count.png)
+</center>
 
-![](Images\Word_Frequency.png)
- <br></br>
-![](Negative_Sentiment_Pie_Chart.png)
- <br></br>
-![](Sentiment_Count.png)
+
+
+# MACHINE LEARNING MODEL
+
+There were seven models used to predict the sentimanet of the tweets. 
+1. Logistic Regression
+2. KNN
+3. Naive Bayes
+4. Support Vector Machine
+5. XGBoost
+6. Ensemble (Randome Forest)
+7. Decision Tree
+
+Note to vectorize the data for model implementation Bag of Words and TF-IDF were used.
+
+
+
+
+
+
+
 
 
 
